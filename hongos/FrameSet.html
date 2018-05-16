@@ -4,9 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Hongos</title>
 </head>
-<frameset rows="window.innerHeight*6/7,*" frameborder="no" border="0" framespacing="0">
+<script>
+	function alt() return window.innerHeight*1/8;
+	function anc() return window.innerWidth*5/6;
+</script>
+<frameset rows="alt(),*" frameborder="no" border="0" framespacing="0">
   <frame src="topFrame.html" name="topFrame" scrolling="no" noresize="noresize" id="topFrame" title="topFrame" />
-  <frameset rows="*" cols="*,window.innerWidth*4/5" framespacing="0" frameborder="no" border="0">
+  <frameset rows="*" cols="*,anc()" framespacing="0" frameborder="no" border="0">
 		<frame src="mainFrame.html" name="mainFrame" id="mainFrame" title="mainFrame" />
 		<frame src="rightFrame.html" name="rightFrame" scrolling="yes" noresize="noresize" id="rightFrame" title="rightFrame" />
 	</frameset>
