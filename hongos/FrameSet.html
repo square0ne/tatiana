@@ -8,9 +8,9 @@
 	document.getElementById("alt").innerHTML = window.innerHeight*1/8;
 	document.getElementById("anc").innerHTML = window.innerWidth*5/6;
 </script>
-<frameset rows="alt(),*" frameborder="no" border="0" framespacing="0">
+<frameset id="alt" rows="alt,*" frameborder="no" border="0" framespacing="0">
   <frame src="topFrame.html" name="topFrame" scrolling="no" noresize="noresize" id="topFrame" title="topFrame" />
-  <frameset rows="*" cols="*,anc()" framespacing="0" frameborder="no" border="0">
+  <frameset id="anc" rows="*" cols="*,anc()" framespacing="0" frameborder="no" border="0">
 		<frame src="mainFrame.html" name="mainFrame" id="mainFrame" title="mainFrame" />
 		<frame src="rightFrame.html" name="rightFrame" scrolling="yes" noresize="noresize" id="rightFrame" title="rightFrame" />
 	</frameset>
